@@ -34,17 +34,21 @@ Uses `hidutil` under the hood to modify `HIDMouseAcceleration` in real-time (no 
 
 ## Installation
 
-### From source
+### Download (recommended)
+
+1. Download `PointerSpeed.app.zip` from [Releases](https://github.com/NathanLenias/PointerSpeed/releases)
+2. Unzip and drag `PointerSpeed.app` to `/Applications`
+3. Launch it — the app lives in your menu bar
+
+### Build from source
 
 1. Clone this repository
 2. Open `PointerSpeed.xcodeproj` in Xcode
 3. Build and run (⌘R)
-4. Optionally, archive and export to `/Applications`
 
 ## Requirements
 
 - macOS 13.0 or later
-- Xcode 15+ (to build from source)
 
 ## License
 
