@@ -2,16 +2,19 @@
 //  PointerSpeedApp.swift
 //  PointerSpeed
 //
-//  Created by Nathan Balencie on 07/01/2026.
-//
 
 import SwiftUI
 
 @main
 struct PointerSpeedApp: App {
+    @StateObject private var hidUtil = HidUtil()
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra {
+            ContentView(hidUtil: hidUtil)
+        } label: {
+            Image(systemName: "computermouse.fill")
         }
+        .menuBarExtraStyle(.window)
     }
 }
